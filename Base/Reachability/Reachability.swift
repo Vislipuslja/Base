@@ -6,7 +6,7 @@
 //  Copyright © 2017 Vladimir Kavlakan. All rights reserved.
 //
 
-import Reachability
+import ReachabilitySwift
 
 public protocol ReachabilityServiceDelegate: class {
     func serviceDidBecomeReachable(_ service: ReachabilityServiceProtocol)

@@ -43,9 +43,11 @@
 		404253DF1EE6771100741FC0 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 404253DC1EE6771100741FC0 /* Alamofire.framework */; };
 		404253E01EE6771100741FC0 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 404253DD1EE6771100741FC0 /* ObjectMapper.framework */; };
 		404253E11EE6771100741FC0 /* ReachabilitySwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 404253DE1EE6771100741FC0 /* ReachabilitySwift.framework */; };
+		79A51FEFE05D9A3DAB76B045 /* Pods_Base.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00D758EA1CE305C9263ED1CE /* Pods_Base.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		00D758EA1CE305C9263ED1CE /* Pods_Base.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Base.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		404253671EE674E500741FC0 /* Base.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Base.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4042536A1EE674E500741FC0 /* Base.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Base.h; sourceTree = "<group>"; };
 		4042536B1EE674E500741FC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -84,6 +86,8 @@
 		404253DC1EE6771100741FC0 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "../../../Library/Developer/Xcode/DerivedData/Zavezu-dpktdipnqdjfzebfpotyubwitivu/Build/Products/Debug-iphoneos/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
 		404253DD1EE6771100741FC0 /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = "../../../Library/Developer/Xcode/DerivedData/Zavezu-dpktdipnqdjfzebfpotyubwitivu/Build/Products/Debug-iphoneos/ObjectMapper/ObjectMapper.framework"; sourceTree = "<group>"; };
 		404253DE1EE6771100741FC0 /* ReachabilitySwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReachabilitySwift.framework; path = "../../../Library/Developer/Xcode/DerivedData/Zavezu-dpktdipnqdjfzebfpotyubwitivu/Build/Products/Debug-iphoneos/ReachabilitySwift/ReachabilitySwift.framework"; sourceTree = "<group>"; };
+		4D856A0F21707D2229930632 /* Pods-Base.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Base.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Base/Pods-Base.debug.xcconfig"; sourceTree = "<group>"; };
+		5BB7D094F13A0A51DCDEFFBD /* Pods-Base.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Base.release.xcconfig"; path = "Pods/Target Support Files/Pods-Base/Pods-Base.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +98,7 @@
 				404253DF1EE6771100741FC0 /* Alamofire.framework in Frameworks */,
 				404253E01EE6771100741FC0 /* ObjectMapper.framework in Frameworks */,
 				404253E11EE6771100741FC0 /* ReachabilitySwift.framework in Frameworks */,
+				79A51FEFE05D9A3DAB76B045 /* Pods_Base.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,6 +111,7 @@
 				404253691EE674E500741FC0 /* Base */,
 				404253681EE674E500741FC0 /* Products */,
 				404253DB1EE6771000741FC0 /* Frameworks */,
+				D985B42F996AB449A01CBB22 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -284,8 +290,18 @@
 				404253DC1EE6771100741FC0 /* Alamofire.framework */,
 				404253DD1EE6771100741FC0 /* ObjectMapper.framework */,
 				404253DE1EE6771100741FC0 /* ReachabilitySwift.framework */,
+				00D758EA1CE305C9263ED1CE /* Pods_Base.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D985B42F996AB449A01CBB22 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4D856A0F21707D2229930632 /* Pods-Base.debug.xcconfig */,
+				5BB7D094F13A0A51DCDEFFBD /* Pods-Base.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -306,10 +322,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4042536F1EE674E500741FC0 /* Build configuration list for PBXNativeTarget "Base" */;
 			buildPhases = (
+				BE5669DE7E546D004967EDC4 /* [CP] Check Pods Manifest.lock */,
 				404253621EE674E500741FC0 /* Sources */,
 				404253631EE674E500741FC0 /* Frameworks */,
 				404253641EE674E500741FC0 /* Headers */,
 				404253651EE674E500741FC0 /* Resources */,
+				EACEFA6F9F8E8CDAEC28E127 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -362,6 +380,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BE5669DE7E546D004967EDC4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EACEFA6F9F8E8CDAEC28E127 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Base/Pods-Base-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		404253621EE674E500741FC0 /* Sources */ = {
@@ -509,6 +560,7 @@
 		};
 		404253701EE674E500741FC0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D856A0F21707D2229930632 /* Pods-Base.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
@@ -529,6 +581,7 @@
 		};
 		404253711EE674E500741FC0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5BB7D094F13A0A51DCDEFFBD /* Pods-Base.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;

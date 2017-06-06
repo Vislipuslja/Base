@@ -37,7 +37,7 @@ Pod::Spec.new do |s|
   #
 
   s.source_files  = "Base", "Base/**/*.{h,m,swift}"
-  s.exclude_files = "Classes/Exclude"
+  s.exclude_files = "Base/podfile"
 
   # s.public_header_files = "Classes/**/*.h"
 
