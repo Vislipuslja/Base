@@ -144,6 +144,9 @@ public final class RequestObject<T: Request> {
         var urlRequest = URLRequest(url: url,
                                     cachePolicy: cachePolicy ?? defaultCachePolicy,
                                     timeoutInterval: timeoutInterval ?? defaultTimeoutInterval)
+        headers.forEach { (header: (key: String, value: String)) in
+            urlRequest.setValue(header.value, forHTTPHeaderField: header.key)
+        }
         urlRequest.httpMethod = request.httpMethod.rawValue
         
         if isLogging {
