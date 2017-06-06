@@ -6,13 +6,19 @@
 //  Copyright © 2017 Vladimir Kavlakan. All rights reserved.
 //
 
+import RealmSwift
+
 public final class Database {
     
     // MARK: Properties
-    public static let instance: Database = Database()
+    public let realm: Realm
     
-    private init() {
-        
+    public init?() {
+        do {
+            realm = try Realm()
+        } catch {
+            return nil
+        }
     }
     
     // MARK: Public

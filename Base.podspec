@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
   #
 
 
-  s.source       = { :git => "https://github.com/Vislipuslja/Base.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/Vislipuslja/Base.git", :branch => "#{s.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -75,8 +75,9 @@ Pod::Spec.new do |s|
   #  where they will only apply to your library. If you depend on other Podspecs
   #  you can include multiple dependencies to ensure it works.
   s.dependency 'Alamofire', '~> 4.4'
-  s.dependency 'ObjectMapper'
+  s.dependency 'ObjectMapper', '~> 2.2.7'
   s.dependency 'ReachabilitySwift', '~> 3'
+  s.dependency 'RealmSwift', '~> 2.8.0'
 
   s.pod_target_xcconfig = { 'SWIFT_VERSION' => '3' }
 
